@@ -1,171 +1,206 @@
-body{
+body {
+  font-family: outfit;
+  border-radius: 10px;
+  height: 100vh;
+}
+.container {
+  background-image: url("../assets/Background_decor.svg");
+  /* padding: 40px 35px; */
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+.typography {
+  display: grid;
+  padding: 50px 40px;
+  grid-column: span 2;
+}
+.ourTeam {
+  color: #263fa9;
+}
+.content {
+  font-family: outfit;
+  color: rgb(61, 60, 60);
+  font-size: 16px;
+  font-weight: 400;
+}
+.heading {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: outfit;
+}
+.firstContainer {
+  display: flex;
+  position : relative;
+  background-color: #c1b6f8;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/Gradient.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+.textInsideImage{
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
     font-family: outfit;
-    border-radius: 10px;
-    height: 100vh;
+    font-size: 16px;
+    font-weight: 800;
+    filter: drop-shadow(2px 4px 6px black);
+    color: white;
 }
-.container{
-    background-image: url('/home/credentek/Music/uiskill/uiskills_01/vite-project/src/assets/Background_decor.svg');
-    /* padding: 40px 35px; */
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-}
-.typography{
-    display: grid;
-    padding: 50px 40px;
-    grid-column: span 2;
-}
-.ourTeam{
-    color: #263FA9;
-}
-.content{
+.textInsideImageTitle{
+    filter: drop-shadow(0px 0px 0px rgb(255, 255, 255));
     font-family: outfit;
-    color: rgb(61, 60, 60);
+    font-size: 20px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.textInsideImageDesc{
+    filter: drop-shadow(0px 0px 0px rgb(255, 255, 255));
+    font-family: outfit;
     font-size: 16px;
     font-weight: 400;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    opacity: 10;
+
 }
-.heading{
-    font-size: 40px;
-    font-weight: 500;
-    font-family: outfit;
+
+.secondContainer {
+  width: 100%;position : relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #edacd2;
+  background-image: url("../assets/Gradient.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.firstContainer{
-    display: flex;
-    background-color: #C1B6F8;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+.thirdContainer {
+  width: 100%;
+  display: flex;position : relative;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #9dc4f8;
+  background-image: url("../assets/Gradient.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.secondContainer{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    background-color: #EDACD2;
+.allMembers {
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  height: auto;
+  width: auto;
+  padding: 30px 40px;
+  min-width: 205px;
+  font-family: outfit;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(61, 60, 60);
 }
-.thirdContainer{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    background-color: #9DC4F8;
+.fourthContainer {
+  width: 100%;position : relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #f8d8b0;
+  background-image: url("../assets/Gradient.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.allMembers{
-    display: flex;
-    align-items: end;
-    justify-content: start;
-    height: auto;
-    width: auto;
-    padding: 30px 40px;
-    min-width: 205px;
-    font-family: outfit;
-    font-size: 16px;
-    font-weight: 500;
-    color: rgb(61, 60, 60);
-}
-.fourthContainer{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    background-color: #F8D8B0;
-}
-.fiveContainer{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    background-color: #86E7D4;
+.fiveContainer {
+  width: 100%;position : relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #86e7d4;
+  background-image: url("../assets/Gradient.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 @media screen and (max-width: 1280px) {
-    .container{
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-    }
-    .typography{
-        grid-column: span 3;
-        width: 460px;
-    }
-    .allMembers{
-        order: 7;
-        /* grid-column: span auto; */
-        grid-template-columns: repeat(3, auto);
-
-    }
-    .fourthContainer{
-        order: 8;
-        grid-column: span auto;
-
-    }
-    .fiveContainer{
-        order: 9;
-        grid-column: span auto;
-
-    }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+  .typography {
+    grid-column: span 3;
+    width: 460px;
+  }
+  .allMembers {
+    order: 7;
+    /* grid-column: span auto; */
+    grid-template-columns: repeat(3, auto);
+  }
+  .fourthContainer {
+    order: 8;
+    grid-column: span auto;
+  }
+  .fiveContainer {
+    order: 9;
+    grid-column: span auto;
+  }
 }
 
 @media screen and (max-width: 870px) {
-    .container{
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-    }
-    .typography{
-        grid-column: span 2;
-        /* width: 460px; */
-    }
-    .allMembers{
-        order: 9;
-        /* grid-column: span auto; */
-        grid-template-columns: repeat(3, auto);
-
-    }
-    .fourthContainer{
-        order: 7;
-        grid-column: span auto;
-
-    }
-    .fiveContainer{
-        order: 8;
-        grid-column: span auto;
-
-    }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  .typography {
+    grid-column: span 2;
+    /* width: 460px; */
+  }
+  .allMembers {
+    order: 9;
+    /* grid-column: span auto; */
+    grid-template-columns: repeat(3, auto);
+  }
+  .fourthContainer {
+    order: 7;
+    grid-column: span auto;
+  }
+  .fiveContainer {
+    order: 8;
+    grid-column: span auto;
+  }
 }
 
-
 @media screen and (max-width: 640px) {
-    .container{
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        /* margin: 20px; */
-    }
-    .typography{
-        grid-column: span 1;
-        /* width: 460px; */
-        width: fit-content;
-    }
-    .allMembers{
-        display: grid;
-        order: 9;
-        grid-column: span 1;
-        grid-template-columns: repeat(3, auto);
-
-    }
-    .fourthContainer{
-        order: 7;
-        grid-column: span auto;
-
-    }
-    .fiveContainer{
-        order: 8;
-        grid-column: span auto;
-
-    }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    /* margin: 20px; */
+  }
+  .typography {
+    grid-column: span 1;
+    /* width: 460px; */
+    width: fit-content;
+  }
+  .allMembers {
+    display: grid;
+    order: 9;
+    grid-column: span 1;
+    grid-template-columns: repeat(3, auto);
+  }
+  .fourthContainer {
+    order: 7;
+    grid-column: span auto;
+  }
+  .fiveContainer {
+    order: 8;
+    grid-column: span auto;
+  }
 }

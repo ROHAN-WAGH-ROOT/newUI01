@@ -5,6 +5,8 @@ import second from '../assets/person_2@2x.png';
 import third from '../assets/person_3@2x.png';
 import fourth from '../assets/person_4@2x.png';
 import five from '../assets/person_5@2x.png';
+import gradient from '../assets/Gradient@2x.png';
+
 export default function home() {
   return (
     <div className="container">
@@ -19,19 +21,39 @@ export default function home() {
       </div>
       <div className="firstContainer">
         <img src={first} alt="image"/>
+        <div className="textInsideImage">
+          <div className="textInsideImageTitle">Liam Novak</div>
+          <div className="textInsideImageDesc">Software Engineer</div>
+          </div>
       </div>
       <div className="secondContainer">
       <img src={second} alt="image"/>
+      <div className="textInsideImage">
+          <div className="textInsideImageTitle">Sophia Moretti</div>
+          <div className="textInsideImageDesc">Business Development Manager</div>
+          </div>
       </div>
       <div className="allMembers">See all members</div>
       <div className="thirdContainer">
-      <img src={third} alt="image"/>
+      <img src={third} alt="image"  />
+      <div className="textInsideImage">
+          <div className="textInsideImageTitle">Ethan Rossi</div>
+          <div className="textInsideImageDesc">Business Development Manager</div>
+          </div>
       </div>
       <div className="fourthContainer">
       <img src={fourth} alt="image"/>
+      <div className="textInsideImage">
+          <div className="textInsideImageTitle">Isabella Ricci</div>
+          <div className="textInsideImageDesc">UX Designer</div>
+          </div>
       </div>
       <div className="fiveContainer">
       <img src={five} alt="image"/>
+      <div className="textInsideImage">
+          <div className="textInsideImageTitle">Noah Conti</div>
+          <div className="textInsideImageDesc">Content Creator</div>
+          </div>
       </div>
     </div>
   );
