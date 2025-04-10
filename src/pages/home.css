@@ -1,0 +1,171 @@
+body{
+    font-family: outfit;
+    border-radius: 10px;
+    height: 100vh;
+}
+.container{
+    background-image: url('/home/credentek/Music/uiskill/uiskills_01/vite-project/src/assets/Background_decor.svg');
+    /* padding: 40px 35px; */
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+.typography{
+    display: grid;
+    padding: 50px 40px;
+    grid-column: span 2;
+}
+.ourTeam{
+    color: #263FA9;
+}
+.content{
+    font-family: outfit;
+    color: rgb(61, 60, 60);
+    font-size: 16px;
+    font-weight: 400;
+}
+.heading{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: outfit;
+}
+.firstContainer{
+    display: flex;
+    background-color: #C1B6F8;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.secondContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #EDACD2;
+}
+.thirdContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #9DC4F8;
+}
+.allMembers{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    height: auto;
+    width: auto;
+    padding: 30px 40px;
+    min-width: 205px;
+    font-family: outfit;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(61, 60, 60);
+}
+.fourthContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #F8D8B0;
+}
+.fiveContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #86E7D4;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+    .typography{
+        grid-column: span 3;
+        width: 460px;
+    }
+    .allMembers{
+        order: 7;
+        /* grid-column: span auto; */
+        grid-template-columns: repeat(3, auto);
+
+    }
+    .fourthContainer{
+        order: 8;
+        grid-column: span auto;
+
+    }
+    .fiveContainer{
+        order: 9;
+        grid-column: span auto;
+
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    .typography{
+        grid-column: span 2;
+        /* width: 460px; */
+    }
+    .allMembers{
+        order: 9;
+        /* grid-column: span auto; */
+        grid-template-columns: repeat(3, auto);
+
+    }
+    .fourthContainer{
+        order: 7;
+        grid-column: span auto;
+
+    }
+    .fiveContainer{
+        order: 8;
+        grid-column: span auto;
+
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        /* margin: 20px; */
+    }
+    .typography{
+        grid-column: span 1;
+        /* width: 460px; */
+        width: fit-content;
+    }
+    .allMembers{
+        display: grid;
+        order: 9;
+        grid-column: span 1;
+        grid-template-columns: repeat(3, auto);
+
+    }
+    .fourthContainer{
+        order: 7;
+        grid-column: span auto;
+
+    }
+    .fiveContainer{
+        order: 8;
+        grid-column: span auto;
+
+    }
+}
