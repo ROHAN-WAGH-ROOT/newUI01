@@ -5,11 +5,11 @@ import second from '../assets/person_2@2x.png';
 import third from '../assets/person_3@2x.png';
 import fourth from '../assets/person_4@2x.png';
 import five from '../assets/person_5@2x.png';
-import backgroundImage from '../assets/Background_decor@2x.png';
+import gradient from '../assets/Gradient@2x.png';
 
 export default function home() {
   return (
-    <div className="container" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div className="container">
       <div className="typography">
         <div className="ourTeam">Our team</div>
         <div className="heading">Meet the brain</div>

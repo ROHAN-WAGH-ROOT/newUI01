@@ -4,7 +4,7 @@ body {
   height: 100vh;
 }
 .container {
-  /* background-image: url("assets/Background_decor@2x.png"); */
+  background-image: url("/assets/Background_decor@2x.png");
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
